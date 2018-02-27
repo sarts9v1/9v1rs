@@ -225,9 +225,7 @@ proc connecting_to {call} {
 # Executed when an EchoLink connection has been terminated
 #
 proc disconnected {call} {
-  spellEchoLinkCallsign $call;
-  playMsg "disconnected";
-  playSilence 500;
+# 9v1rs maintains a dignified silence
 }
 
 
@@ -235,9 +233,7 @@ proc disconnected {call} {
 # Executed when an incoming EchoLink connection has been accepted.
 #
 proc remote_connected {call} {
-  playMsg "connected";
-  spellEchoLinkCallsign $call;
-  playSilence 500;
+# 9v1rs maintains a dignified silence
 }
 
 
@@ -479,8 +475,7 @@ proc chat_received {msg} {
 # Executed when an incoming connection is accepted
 #
 proc remote_greeting {call} {
-  playSilence 1000;
-  playMsg "greeting";
+# 9v1rs maintains a dignified silence
 }
 
 
